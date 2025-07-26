@@ -1,0 +1,72 @@
+@charset "utf-8";
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "header-A header-A"
+        "aside-A main-A"
+        "footer-A footer-A";
+    column-gap: 1em;
+    row-gap: 1em;
+    padding: 1em;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+header {
+    background: #333;
+    color: white;
+    grid-area: header-A;
+    padding: 1em;
+}
+
+
+main {
+    background: #ffffff;
+    grid-area: main-A;
+    padding: 1em;
+}
+
+/* サイドバー */
+aside {
+    background: #fef3c7;
+    grid-area: aside-A;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    align-self: start;
+}
+
+
+footer {
+    background: #999;
+    color: white;
+    grid-area: footer-A;
+    padding: 1em;
+    text-align: center;
+}
+
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 50px
+}
+
+#lawQuiz button {
+  background-color: #5893d1;
+  border: 1px solid #007acc;
+  padding: 10px;
+  font-size: 16px;
+  margin: 4px;
+  font-family: serif;
+}
+.container  h3{
+    color: #db6689;
+}
+
+.container h4{
+    color: #007acc;
+}
